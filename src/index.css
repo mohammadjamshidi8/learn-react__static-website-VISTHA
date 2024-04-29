@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    body {
+        @apply font-poppins
+    }
+
+    .mobile-container {
+        @apply w-10/12 mx-auto
+    }
+
+    .tablet-container {
+        @apply w-9/12 mx-auto
+    }
+
+    .desktop-container {
+        @apply w-3/4 mx-auto
+    }
+
+    .wide-desktop-container {
+        @apply w-2/3 mx-auto
+    }
+
+    .responsive {
+        @apply mobile-container md:tablet-container lg:desktop-container 2xl:wide-desktop-container
+    }
+}
