@@ -2,20 +2,29 @@ import React from "react";
 import logo from "./assets/logo.png";
 
 export default function Menu() {
+
+  const expandMobileMenu = (e) => {
+    const mobileMenuWrapper = e.target.nextElementSibling
+
+    mobileMenuWrapper.classList.toggle('h-0')
+    mobileMenuWrapper.classList.toggle('h-[350px]')
+  }
+
   return (
-    <div className="responsive pt-3 flex justify-between">
+    <div className="responsive pt-3 flex justify-between relative z-50">
       <div>
         <img src={logo} alt="" />
       </div>
 
       <div className="flex items-center">
         <svg
+          onClick={expandMobileMenu}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-10 h-10 xl:hidden"
+          className="w-10 h-10 cursor-pointer xl:hidden"
         >
           <path
             strokeLinecap="round"
@@ -24,7 +33,9 @@ export default function Menu() {
           />
         </svg>
 
-        <ul className="hidden xl:flex items-center gap-x-10 capitalize">
+        {/* mobile menu list start */}
+
+        <ul id="mobile-menu" className="absolute transition-all duration-500 top-20 right-0 w-full bg-rose-200 flex flex-col gap-y-4 items-center overflow-hidden h-0 xl:hidden">
           <li>
             <a href="#">Home</a>
           </li>
@@ -43,7 +54,7 @@ export default function Menu() {
           <li>
             <a href="#">customer review</a>
           </li>
-          <li>
+          <li className="flex items-center transition-colors duration-200 cursor-pointer text-white bg-sabz px-5 hover:bg-sabzTire py-2 rounded-full">
             <a href="#" className="flex items-center gap-x-3">
               call
               <svg
@@ -52,7 +63,7 @@ export default function Menu() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-5 h-5 mt-1 rotate-180"
+                className="w-5 h-5 rotate-180"
               >
                 <path
                   strokeLinecap="round"
@@ -63,6 +74,53 @@ export default function Menu() {
             </a>
           </li>
         </ul>
+
+        {/* mobile menu list ends */}
+
+        {/* desktop menu list start */}
+        <ul
+          id="desktop-menu"
+          className="hidden xl:flex items-center gap-x-10 capitalize"
+        >
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">our services</a>
+          </li>
+          <li>
+            <a href="#">price</a>
+          </li>
+          <li>
+            <a href="#">blog</a>
+          </li>
+          <li>
+            <a href="#">customer review</a>
+          </li>
+          <li className="flex items-center transition-colors duration-200 cursor-pointer text-white bg-sabz px-5 hover:bg-sabzTire py-2 rounded-full">
+            <a href="#" className="flex items-center gap-x-3">
+              call
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5 rotate-180"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        {/* desktop menu list ends */}
       </div>
     </div>
   );

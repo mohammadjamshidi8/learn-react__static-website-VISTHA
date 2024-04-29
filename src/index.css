@@ -27,4 +27,12 @@
     .responsive {
         @apply mobile-container md:tablet-container lg:desktop-container 2xl:wide-desktop-container
     }
+
+    #mobile-menu li {
+        @apply py-1
+    }
+
+    #desktop-menu li:not(:last-child) , #mobile-menu li:not(:last-child) {
+        @apply transition duration-200 hover:text-slate-600 hover:font-semibold
+    }
 }
