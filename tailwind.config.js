@@ -12,7 +12,8 @@ export default {
       colors : {
         primary: '#003379',
         sabz : '#44BF8D',
-        sabzTire : '#3d8769'
+        sabzTire : '#3d8769',
+        lightPurple : '#edecfd',
       }
     },
   },

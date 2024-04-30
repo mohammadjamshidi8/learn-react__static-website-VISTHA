@@ -15,7 +15,7 @@ export default function Hero() {
           Lorem Ipsum is a fake text with incomprehensible simplicity produced
           by the printing industry and using graphic designers.
         </span>
-        <div className="flex gap-x-3 items-center transition duration-1000">
+        <div className="flex gap-x-1 items-center transition duration-1000">
           <button className="px-5 md:px-10 py-2 md:py-4 bg-sabz border-[2px] border-transparent rounded-full text-center">
             our services
           </button>
