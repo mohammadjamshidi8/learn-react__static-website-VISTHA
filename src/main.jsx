@@ -5,6 +5,7 @@ import Hero from './Hero'
 import AboutUs from './AboutUs'
 import Services from './Services'
 import Prices from './Prices'
+import Blog from './Blog'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -14,5 +15,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <AboutUs/>
     <Services/>
     <Prices/>
+    <Blog/>
   </React.StrictMode>,
 )

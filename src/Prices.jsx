@@ -5,7 +5,7 @@ export default function Prices() {
     <div className="py-14">
       <div className="responsive flex flex-col gap-y-6">
         <div className="flex flex-col items-center gap-y-5">
-          <h2 className="text-3xl font-black text-primary">Prices</h2>
+          <h2 className="text-3xl  xl:text-5xl 2xl:text-6xl font-black text-primary">Prices</h2>
 
           <span className="tracking-widest text-center text-pretty">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
