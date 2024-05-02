@@ -12,15 +12,15 @@ export default function BlogPost({img,title,category,date}) {
         />
       </div>
       <div className="flex flex-col gap-y-4 p-5">
-        <span>
-          <a href="#">Lorem ipsum dolor sit.</a>
+        <span className="font-black text-primary">
+          <a href="#">{title}</a>
         </span>
         <div className="flex justify-between">
-          <button className="px-5 py-1 border-[2px] border-green-500 bg-green-100 text-green-900 rounded-md">
-            software
+          <button className="text-xs px-5 py-1 border-[2px] border-green-500 bg-green-100 text-green-900 rounded-md">
+            {category}
           </button>
-          <button className="px-5 py-1 border-[2px] border-blue-500 bg-blue-100 text-blue-900 rounded-md">
-            2024/05/01
+          <button className="text-xs px-5 py-1 border-[2px] border-blue-500 bg-blue-100 text-blue-900 rounded-md">
+            {date}
           </button>
         </div>
       </div>

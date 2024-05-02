@@ -6,9 +6,9 @@ export default function Blog() {
 
 
     const postInfo = [
-        {id: 1, img: './assets/blog-1.jpg',title: 'Lorem ipsum dolor sit.',category: 'software',date: '2024/05/01'},
-        {id: 2, img: 'https://elemana.ir/vistha/images/blog/blog-2.jpg',title: 'Lorem ipsum dolor sit.',category: 'news',date: '2024/05/01'},
-        {id: 3, img: '../assets/blog-3.jpg',title: 'Lorem ipsum dolor sit.',category: 'modern',date: '2024/05/01'},
+        {id: 1, img: 'https://raw.githubusercontent.com/mohammadjamshidi8/learn-react__static-website-VISTHA/main/src/assets/blog-1.jpg',title: 'Lorem ipsum dolor sit.',category: 'software',date: '2024/05/01'},
+        {id: 2, img: 'https://raw.githubusercontent.com/mohammadjamshidi8/learn-react__static-website-VISTHA/main/src/assets/blog-2.jpg',title: 'Lorem ipsum dolor sit.',category: 'news',date: '2024/05/01'},
+        {id: 3, img: 'https://raw.githubusercontent.com/mohammadjamshidi8/learn-react__static-website-VISTHA/main/src/assets/blog-3.jpg',title: 'Lorem ipsum dolor sit.',category: 'modern',date: '2024/05/01'},
     ]
 
   return (
