@@ -16,12 +16,12 @@ export default function Services() {
 
 
   return (
-    <div className="my-10 py-10">
+    <div className="py-14 bg-gray-100">
       <div className="responsive flex flex-col gap-y-10">
         <div className="flex flex-col gap-y-5">
           <span className="text-black text-opacity-70">Vista Inc</span>
 
-          <h2 className="text-4xl xl:text-5xl 2xl:text-6xl font-black text-primary">
+          <h2 className="text-3xl xl:text-5xl 2xl:text-6xl font-black text-primary">
           software services
           </h2>
 
