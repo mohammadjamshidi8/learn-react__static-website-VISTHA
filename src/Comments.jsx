@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react';
 import CommentBox from './components/CommentBox';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,11 +15,15 @@ export default function Comments() {
 
 
     const commentInfo = [
-        {id: 1, image: 'https://raw.githubusercontent.com/mohammadjamshidi8/learn-react__static-website-VISTHA/main/src/assets/5.svg?short_path=c5fcea2'}
+        {id: 1, image: 'https://raw.githubusercontent.com/mohammadjamshidi8/learn-react__static-website-VISTHA/main/src/assets/3501570.jpg'},
+        {id: 2, image: 'https://raw.githubusercontent.com/mohammadjamshidi8/learn-react__static-website-VISTHA/main/src/assets/6988381.jpg'},
+        {id: 3, image: 'https://raw.githubusercontent.com/mohammadjamshidi8/learn-react__static-website-VISTHA/main/src/assets/3501570.jpg'},
     ]
 
   return (
     <>
+      <div className='py-20 bg-white'>
+      <div className='responsive'>
       <Swiper
         spaceBetween={30}
         pagination={{
@@ -29,11 +32,14 @@ export default function Comments() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-            <CommentBox/>
-        </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+            {commentInfo.map(item => (
+                <SwiperSlide className='my-10'>
+                <CommentBox key={item.id} {...item} />
+                </SwiperSlide>
+            ))}        
       </Swiper>
+      </div>
+      </div>
     </>
   );
 }
