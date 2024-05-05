@@ -13,6 +13,12 @@ import './index.css';
 import { Pagination } from 'swiper/modules';
 
 export default function Comments() {
+
+
+    const commentInfo = [
+        {id: 1, image: 'https://raw.githubusercontent.com/mohammadjamshidi8/learn-react__static-website-VISTHA/main/src/assets/5.svg?short_path=c5fcea2'}
+    ]
+
   return (
     <>
       <Swiper
