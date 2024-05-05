@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="w-11/12 mx-auto">
         <img src={hero} className="aspect-video object-contain" alt="" />
       </div>
-      <div className="flex flex-col gap-y-7 w-11/12 mx-auto items-center">
+      <div className="flex flex-col gap-y-7 w-11/12 mx-auto items-center z-10">
         <h1 className="text-center text-2xl lg:text-4xl lg:text-left md:text-5xl 2xl:text-5xl font-bold text-primary z-50">
           Vista e-commerce company in the field of website design
         </h1>

@@ -30,7 +30,7 @@ export default function Menu() {
         </svg>
       </div>
 
-      <div className="relative responsive pt-3 flex justify-between bg-transparent">
+      <div className="relative responsive pt-3 flex justify-between bg-transparent z-50">
         <div>
           <img src={logo} alt="" />
         </div>
@@ -56,7 +56,7 @@ export default function Menu() {
 
           <ul
             id="mobile-menu"
-            className="absolute transition-all duration-500 top-20 right-0 w-full bg-white bg-opacity-90 flex flex-col gap-y-4 items-center overflow-hidden h-0 xl:hidden"
+            className="absolute transition-all duration-500 top-20 right-0 w-full bg-white bg-opacity-90 flex flex-col gap-y-4 items-center overflow-hidden h-0 xl:hidden z-50"
           >
             <li>
               <a href="#">Home</a>
