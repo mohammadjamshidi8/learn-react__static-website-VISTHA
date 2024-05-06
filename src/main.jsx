@@ -7,6 +7,7 @@ import Services from './Services'
 import Prices from './Prices'
 import Blog from './Blog'
 import Comments from './Comments'
+import ContactUs from './ContactUs'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,5 +19,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Prices/>
     <Blog/>
     <Comments/>
+    <ContactUs/>
   </React.StrictMode>,
 )

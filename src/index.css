@@ -36,7 +36,7 @@
         @apply transition duration-200 hover:text-slate-600 hover:font-semibold
     }
 
-    /*  */
+    /* swiper slider style start */
 
     #app {
         height: 100%;
@@ -71,5 +71,5 @@
       }
 
 
-    /*  */
+    /* swiper slider style ends */
 }
