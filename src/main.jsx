@@ -8,6 +8,7 @@ import Prices from './Prices'
 import Blog from './Blog'
 import Comments from './Comments'
 import ContactUs from './ContactUs'
+import Footer from './Footer'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -20,5 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Blog/>
     <Comments/>
     <ContactUs/>
+    <Footer/>
   </React.StrictMode>,
 )
